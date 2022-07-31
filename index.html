@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script src="https://kit.fontawesome.com/040922871c.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/images/logo.svg" alt="logo">
+        </div>
+        <div class="nav-btn">
+          <button>Try it free</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article class="hero">
+        <div class="hero_one">
+          <div class="heading">
+            <h1>Build The Community Your Fans Will Love</h1>
+          </div>
+          <div class="paragraph">
+            <p>Huddle re-imagines the way we build communities. You have a voice, but so does 
+              your audience. Create connections with your users as you engage in genuine discussion.</p>
+          </div>
+          <div class="hero_btn">
+            <button>Get Started For Free</button>
+          </div>
+        </div>
+        <div class="hero_two">
+          <img src="/images/screen-mockups.svg" alt="Screen Mockup">
+        </div>
+      </article>
+
+      <article class="article_one">
+        <div class="article_sub_one">
+          <div class="img_sub_one">
+            <img src="/images/icon-communities.svg" alt="Communities Icon">
+          </div>
+          <div class="heading_sub_one">
+            <h2>1.4k+</h2>
+          </div>
+          <div class="paragraph_sub_one">
+            <p>Communities Formed</p>
+          </div>
+        </div>
+        <div class="article_sub_two">
+          <div class="img_sub_two">
+            <img src="/images/icon-messages.svg" alt="Message Icon">
+          </div>
+          <div class="heading_sub_two">
+            <h2>2.7m+</h2>
+          </div>
+          <div class="paragraph_sub_two">
+            <p>Messages Sent</p>
+          </div>
+        </div>
+      </article>
+      <article class="article_two">
+        <div class="article_two_sub_one">
+          <img src="/images/illustration-grow-together.svg" alt="illustration grow together">
+        </div>
+        <div class="article_two_sub_two">
+          <div class="article_two_sub_heading">
+            <h3>Grow Together</h3>
+          </div>
+          <div class="article_two_sub_paragraph">
+            <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+              Think of the insightful conversations you miss out on with a feedback form. </p>
+          </div>
+        </div>
+
+      </article>
+      <article class="article_three">
+        <div class="article_three_sub_one">
+          <img src="/images/illustration-flowing-conversation.svg" alt="illustration flowing conversation">
+        </div>
+        <div class="article_three_sub_two">
+          <div class="article_three_sub_heading">
+            <h3>Flowing Conversations</h3>
+          </div>
+          <div class="article_three_sub_paragraph">
+            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+              just-in-time loading for a more natural flow.</p>
+          </div>
+        </div>
+
+      </article>
+      <article class="article_four">
+        <div class="article_four_sub_one">
+          <img src="/images/illustration-your-users.svg" alt="illustration your users">
+        </div>
+        <div class="article_four_sub_two">
+          <div class="article_four_sub_heading">
+            <h3>Your Users</h3>
+          </div>
+          <div class="article_four_sub_paragraph">
+            <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+              once signed in to your app, your users can start chatting immediately.</p>
+          </div>
+        </div>
+      </article>
+      <article class="article_five">
+        <div class="article_five_sub_one">
+            <h3>Ready To Build Your Community?</h3>
+        </div>
+        <div class="article_five_sub_two">
+          <button>Get Started For Free</button>
+        </div>
+      </article>
+    </main>
+    
+    <footer>
+      <div class="footer_one">
+        <div class="footer_sub_one">
+          <div class="footer_heading">
+            <h3>Newsletter</h3>
+          </div>
+          <div class="footer_one_paragraph">
+            <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We'll never send you spam or pass on your email address</p>
+          </div>
+        </div>
+        <div class="footer_sub_two">
+          <div class="footer_form">
+            <form onsubmit="return check()" novalidate>
+              <input type="email" id="email" name="email" placeholder="Enter your email...">
+              <span id="cname" class="emsg"></span>
+              <button name="submit" type="submit" value="Get-Started">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer_two">
+        <div class="footer_logo">
+          <img src="/images/footer-logo.svg" alt="Footer Logo">
+        </div>
+        <div class="footer_paragraph">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+            vestibulum a, ultrices quis sem.</p>
+        </div>
+      </div>
+      <div class="footer_three">
+        <div class="phone">
+          <div class="phone_icon">
+            <img src="/images/icon-phone.svg" alt="Phone Icon">
+          </div>
+          <div class="phone_number">
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+        </div>
+        <div class="email">
+          <div class="email_icon">
+            <img src="/images/icon-email.svg" alt="email Icon">
+          </div>
+          <div class="email_number">
+            <p>example@huddle.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer_four">
+        <div class="social"><i class="fa-brands fa-square-facebook"></i></div>
+        <div class="social"><i class="fa-brands fa-instagram"></i></div>
+        <div class="social"><i class="fa-brands fa-square-twitter"></i></div>
+      </div>
+      <div class="footer_five">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">KJ</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    function check () {
+    var error = "", field = "";
+  
+    field = document.getElementById("email");
+    error = document.getElementById("cname");
+    if (!field.checkValidity()) {
+      valid = false;
+      field.classList.add("err");
+      error.innerHTML = "Please check your email";
+    } else {
+      field.classList.remove("err");
+      error.innerHTML = "";
+    }
+    return valid;
+  }
+  </script>
+</body>
+</html>
